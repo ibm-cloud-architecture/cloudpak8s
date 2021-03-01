@@ -85,6 +85,8 @@
       path: /aiops/aimgr/install/
     - title: AI Manager - Slack
       path: /aiops/aimgr/slack/
+    - title: AI Mgr - Incident Similarity
+      path: /aiops/aimgr/incident-similarity/
 - title: Contribute
   pages:
     - title: Contribute to Cloud Paks At Work
