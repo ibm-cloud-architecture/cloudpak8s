@@ -81,9 +81,9 @@
       path: /day2/ServiceMesh/
 - title: Watson AIOps
   pages:
-    - title: AI Manager - Installation
+    - title: AI Mgr - Installation
       path: /aiops/aimgr/install/
-    - title: AI Manager - Slack
+    - title: AI Mgr - Slack
       path: /aiops/aimgr/slack/
     - title: AI Mgr - Incident Similarity
       path: /aiops/aimgr/incident-similarity/
