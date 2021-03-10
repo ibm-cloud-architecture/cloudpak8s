@@ -1,0 +1,60 @@
+apiVersion: icp4a.ibm.com/v1
+kind: ICP4ACluster
+metadata:
+  name: cp4a
+  labels:
+    app.kubernetes.io/instance: ibm-dba
+    app.kubernetes.io/managed-by: ibm-dba
+    app.kubernetes.io/name: ibm-dba
+    release: 19.0.3
+spec:
+  ldap_configuration:
+    # "IBM Security Directory Server" or "Microsoft Active Directory"
+    lc_selected_ldap_type: "IBM Security Directory Server"
+    lc_ldap_server: "<ldap-server-hostname>"
+    lc_ldap_port: "389"
+    # Secret is expected to have ldapUsername and ldapPassword keys, optional if your LDAP server allows anonymous bind.
+    lc_bind_secret: <ldap-bind-secret>
+    lc_ldap_base_dn: "dc=example,dc=org"
+    lc_ldap_ssl_enabled: false
+    lc_ldap_ssl_secret_name: ""
+    lc_ldap_user_name_attribute: "*:cn"
+    lc_ldap_user_display_name_attr: "cn"
+    lc_ldap_group_base_dn: "dc=example,dc=org"
+    lc_ldap_group_name_attribute: "*:cn"
+    lc_ldap_group_display_name_attr: "cn"
+    lc_ldap_group_membership_search_filter: "(|(&(objectclass=groupofnames)(member={0}))(&(objectclass=groupofuniquenames)(uniquemember={0})))"
+    lc_ldap_group_member_id_map: "groupofnames:member"
+    lc_ldap_max_search_results: 4500
+    # ca_ldap_configuration:
+    #   lc_user_filter: "(&(cn={{ '{{' }}username{{ '}}'}})(objectclass=person))"
+    #   lc_ldap_self_signed_crt: "" #true or false when lc_ldap_ssl_enabled: true
+    # ad:
+    #   lc_ad_gc_host: ""
+    #   lc_ad_gc_port: ""
+    #   lc_user_filter: "(&(cn=%v)(objectclass=person))"
+    #   lc_group_filter: "(&(cn=%v)(|(objectclass=groupofnames)(objectclass=groupofuniquenames)(objectclass=groupofurls)))"
+    tds:
+      lc_user_filter: "(&(cn=%v)(objectclass=person))"
+      lc_group_filter: "(&(cn=%v)(|(objectclass=groupofnames)(objectclass=groupofuniquenames)(objectclass=groupofurls)))"
+
+odm_configuration:
+    debug: true
+    version: 19.0.3
+    
+    image:
+      repository: "cp.icr.io/cp/cp4a/odm"
+      tag: 8.10.3
+      pullPolicy: IfNotPresent
+      pullSecrets: "<pull-secret>"
+      
+    externalDatabase:
+      type: "db2"
+      serverName: "<db-server-hostname>"
+      databaseName: "<db-name>"
+      secretCredentials: "<db-secret>"
+      port: "50000"
+
+    customization:
+      authSecretRef: "<odm-users-secret>"
+

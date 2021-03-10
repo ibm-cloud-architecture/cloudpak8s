@@ -1,0 +1,19 @@
+cmisProductionSetting:
+  cpeUrl: http://cpe-prod-release-ibm-dba-contentservices-http-ecmproject.dccluster-06984b2d85682a68a3a5ac25e90299e6-0001.us-east.containers.appdomain.cloud/wsi/FNCEWS40MTOM
+  jvmHeapXms: 512
+  jvmHeapXmx: 1024
+  license: accept
+dataVolume:
+  existingPVCforCMISCfgstore: "cmis-cfgstore-pvc"
+  existingPVCforCMISLogstore: "cmis-logstore-pvc"
+
+autoscaling:
+  enabled: false
+
+
+imagePullSecrets:
+  name: "admin.registrykey"
+
+image:
+  repository: docker-registry.default.svc:5000/ecmproject/cmis
+  pullPolicy: IfNotPresent

@@ -1,0 +1,28 @@
+cpeProductionSetting:
+  jvmHeapXms: 512
+  jvmHeapXmx: 1024
+  gcdJNDIName: GCDDS
+  gcdJNDIXAName: GCDDSXA
+  licenseModel: FNCM.CU
+  license: accept
+
+dataVolume:
+## Specify the name of the Existing Claim to be used by your application
+## empty string means don't use an existClaim
+## Existing Persistence parameters for CPE
+  existingPVCforCPECfgstore: "cpe-cfgstore-pvc"
+  existingPVCforCPELogstore: "cpe-logstore-pvc"
+  existingPVCforFilestore: "cpe-filestore-pvc"
+  existingPVCforICMrulestore: "cpe-icmrules-pvc"
+  existingPVCforTextextstore: "cpe-textext-pvc"
+  existingPVCforBootstrapstore: "cpe-bootstrap-pvc"
+  existingPVCforFNLogstore: "cpe-fnlogstore-pvc"
+
+
+## Horizontal Pod Autoscaler
+autoscaling:
+  enabled: false
+
+image:
+  repository: docker-registry.default.svc:5000/ecmproject/cpe
+  pullPolicy: IfNotPresent

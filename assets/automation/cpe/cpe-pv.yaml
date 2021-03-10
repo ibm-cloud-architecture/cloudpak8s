@@ -1,0 +1,263 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-cfgstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/configDropins/overrides
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-cfgstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-cfgstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-cfgstore-pv
+  volumeName: cpe-cfgstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-logstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/logs
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-logstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-logstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-logstore-pv
+  volumeName: cpe-logstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-fnlogstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/cpefnlogstore
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-fnlogstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-fnlogstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-fnlogstore-pv
+  volumeName: cpe-fnlogstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-bootstrap-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/bootstrap
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-bootstrap-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-bootstrap-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-bootstrap-pv
+  volumeName: cpe-bootstrap-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-textext-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/textext
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-textext-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-textext-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-textext-pv
+  volumeName: cpe-textext-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-icmrules-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/icmrules
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-icmrules-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-icmrules-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-icmrules-pv
+  volumeName: cpe-icmrules-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: cpe-filestore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/cpe/asa
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: cpe-filestore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cpe-filestore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: cpe-filestore-pv
+  volumeName: cpe-filestore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi

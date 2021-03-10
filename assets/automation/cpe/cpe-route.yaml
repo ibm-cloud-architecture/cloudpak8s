@@ -1,0 +1,35 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: ibm-cpe-prod
+    release: cpe-prod-release
+  name: cpe-prod-release-ibm-dba-contentservices-https
+  namespace: ecmproject
+spec:
+  port:
+    targetPort: https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: cpe-prod-release-ibm-dba-contentservices
+  wildcardPolicy: None
+
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: ibm-cpe-prod
+    release: cpe-prod-release
+  name: cpe-prod-release-ibm-dba-contentservices-http
+  namespace: ecmproject
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: cpe-prod-release-ibm-dba-contentservices
+  wildcardPolicy: None

@@ -1,0 +1,35 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: navigator-prod
+    release: navigator-prod-release
+  name: navigator-prod-release-ibm-dba-navigator-https
+  namespace: fncnproject
+spec:
+  port:
+    targetPort: https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: navigator-prod-release-ibm-dba-navigator
+  wildcardPolicy: None
+
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: navigator-prod
+    release: navigator-prod-release
+  name: navigator-prod-release-ibm-dba-navigator-http
+  namespace: fncnproject
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: navigator-prod-release-ibm-dba-navigator
+  wildcardPolicy: None

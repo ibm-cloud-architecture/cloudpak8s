@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: cp4a-prod-ibm-dba-ek-elasticsearch
+    component: cp4a-prod-ibm-dba-ek-kibana
+    heritage: Tiller
+    release: cp4a-prod
+  name: cp4a-prod-ibm-dba-ek-kibana
+  namespace: cp4a
+spec:
+  port:
+    targetPort: kibana-ui-https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: cp4a-prod-ibm-dba-ek-kibana
+  wildcardPolicy: None
+

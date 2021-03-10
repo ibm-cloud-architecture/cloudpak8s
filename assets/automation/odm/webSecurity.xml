@@ -1,0 +1,74 @@
+<server>
+  <!-- Web application security -->
+  <basicRegistry id="basic" realm="customRealm">
+    
+    <!-- ODM super user -->
+    <user name="odmAdmin" password="odmAdmin"/>
+    
+    <!-- Users for Decision Center -->
+    <user name="rtsAdmin" password="rtsAdmin"/>
+    <user name="rtsConfig" password="rtsConfig"/>
+    <user name="rtsUser1" password="rtsUser1"/>
+    <user name="rtsUser2" password="rtsUser2"/>
+    
+    <!-- Users for Decision Server -->
+    <user name="resAdmin" password="resAdmin"/>
+    <user name="resDeployer" password="resDeployer"/>
+    <user name="resMonitor" password="resMonitor"/>
+    <user name="resExecutor" password="resExecutor" />
+    
+    <!-- Groups for Decision Center -->
+    <group name="rtsAdministrators">
+      <member name="odmAdmin"/>
+      <member name="rtsAdmin"/>
+    </group>
+    <group name="rtsInstallers">
+      <member name="odmAdmin"/>
+      <member name="rtsAdmin"/>
+    </group>
+    <group name="rtsConfigManagers">
+      <member name="rtsConfig"/>
+    </group>
+    
+    <!-- Groups for Decision Server -->
+    <group name="resAdministrators">
+      <member name="odmAdmin" />
+      <member name="resAdmin" />
+    </group>
+    <group name="resDeployers">
+      <member name="resDeployer" />
+    </group>
+    <group name="resMonitors">
+      <member name="resMonitor" />
+    </group>
+    <group name="resExecutors">
+      <member name="odmAdmin" />
+      <member name="resAdmin" />
+      <member name="resDeployer" />
+      <member name="resMonitor" />
+      <member name="resExecutor" />
+    </group>
+  </basicRegistry>
+
+
+  <ldapRegistry
+      id="ldap"
+      realm="odm-ldap"
+      host="ldap-server-hostname"
+      port="389"
+      ldapType="Custom"
+      ignoreCase="true"
+      recursiveSearch="true"
+      baseDN="dc=example,dc=org"
+      bindDN="cn=admin,dc=example,dc=org"
+      bindPassword="admin">
+      <customFilters
+         userFilter="(uid=%v)"
+         groupFilter="(cn=%v)"
+         userIdMap="*:uid"
+         groupIdMap="*:cn"
+         groupMemberIdMap="groupOfNames:member">
+      </customFilters>
+   </ldapRegistry>
+
+</server>

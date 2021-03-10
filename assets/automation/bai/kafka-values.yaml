@@ -1,0 +1,20 @@
+external:
+  enabled: true
+  type: NodePort
+
+configurationOverrides:
+  "advertised.listeners": |-
+    EXTERNAL://kafka.cluster.local:$((31090 + ${KAFKA_BROKER_ID}))
+  "listener.security.protocol.map": |-
+    PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+
+topics:
+  - name: bai-prod-release-ingress
+    partitions: 1
+    replicationFactor: 1
+  - name: bai-prod-release-egress
+    partitions: 1
+    replicationFactor: 1
+  - name: bai-prod-release-service
+    partitions: 1
+    replicationFactor: 1

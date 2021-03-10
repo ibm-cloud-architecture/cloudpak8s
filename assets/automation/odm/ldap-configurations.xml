@@ -1,0 +1,19 @@
+<dc-usermanagement>
+  <ldapConnections>
+    <ldapConnection name="odm-ldap">
+      <ldapUrl>ldap://123.123.123.123:389</ldapUrl>
+      <searchConnectionDN>cn=root</searchConnectionDN>
+      <searchConnectionPassword>password</searchConnectionPassword>
+      <groupSearchBase>o=ibm,c=us</groupSearchBase>
+      <groupSearchFilter>(&amp;(cn=*)(objectclass=groupOfNames))</groupSearchFilter>
+      <groupNameAttribute>cn</groupNameAttribute>
+      <groupMemberAttribute>member</groupMemberAttribute>
+      <userIdAttribute>uid</userIdAttribute>
+      <userNameAttribute>cn</userNameAttribute>
+      <userMailAttribute></userMailAttribute>
+      <ldapProperties>
+        <ldapPropertyName/>
+      </ldapProperties>
+    </ldapConnection>
+  </ldapConnections>
+</dc-usermanagement>

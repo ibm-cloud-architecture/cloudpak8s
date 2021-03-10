@@ -1,0 +1,18 @@
+<server>
+   <ldapRegistry id="cpe-ldap" realm="defaultRealm"
+      host="<ldap-server-ip>"
+      baseDN="o=ibm,c=us"
+      port="389"
+      ldapType="IBM Tivoli Directory Server"
+      bindDN="cn=root"
+      sslEnabled="False"
+      bindPassword="Passw0rd">
+      <idsFilters
+         userFilter="(&amp;(cn=%v)(objectclass=person))"
+         groupFilter="(&amp;(cn=%v)(|(objectclass=groupOfNames)(objectclass=groupOfUniqueNames)(objectclass=groupOfURLs)))"
+         userIdMap="*:uid"
+         groupIdMap="*:cn"
+         groupMemberIdMap="memberof:member">
+      </idsFilters>
+   </ldapRegistry>
+</server>

@@ -1,0 +1,98 @@
+# Licensed Materials - Property of IBM
+# IBM Cloud Pak for Integration
+# @ Copyright IBM Corp. 2019 All Rights Reserved
+# US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+---
+# Nodes selected to run common services components.
+#
+# The value of the master, proxy, and management parameters is an array,
+# by providing multiple nodes the common services will be configured in
+# a high availability configuration.
+#
+# It is recommended to install the components onto one or more openshift
+# worker nodes. The master, proxy, and management components can all share
+# the same node or set of nodes.
+cluster_nodes:
+  master:
+    - compute4
+    - compute5
+    - compute6
+  proxy:
+    - compute4
+    - compute5
+    - compute6
+  management:
+    - compute4
+    - compute5
+    - compute6
+# This storage class is used to store persistent data for the common services
+# components
+storage_class: rook-ceph-block
+## You can set a different storage class for storing log data.
+## By default it will use the value of storage_class.
+# elasticsearch_storage_class:
+default_admin_password: admin
+password_rules:
+  - '(.*)'
+# default_admin_password:
+# password_rules:
+#   - '^([a-zA-Z0-9\-]{32,})$'
+management_services:
+  # Common services
+  iam-policy-controller: enabled
+  metering: enabled
+  licensing: disabled
+  monitoring: enabled
+  nginx-ingress: enabled
+  common-web-ui: enabled
+  catalog-ui: enabled
+  mcm-kui: enabled
+  logging: enabled
+  audit-logging: disabled
+  system-healthcheck-service: disabled
+  multitenancy-enforcement: disabled
+  configmap-watcher: disabled
+# This section installs the IBM Cloud Pak for Integration Platform Navigator
+# and loads the product charts into the cluster. The navigator will be
+# available after installation at:
+# https://ibm-icp4i-prod-integration.<openshift apps domain>/
+archive_addons:
+  icp4i:
+    namespace: integration
+    repo: local-charts
+    path: icp4icontent/IBM-Cloud-Pak-for-Integration-3.0.0.tgz
+    charts:
+      - name: ibm-icp4i-prod
+        values: {}
+  mq:
+    namespace: mq
+    repo: local-charts
+    path: icp4icontent/IBM-MQ-Advanced-for-IBM-Cloud-Pak-for-Integration-5.0.0.tgz
+  ace:
+    namespace: ace
+    repo: local-charts
+    path: icp4icontent/IBM-App-Connect-Enterprise-for-IBM-Cloud-Pak-for-Integration-3.0.0.tgz
+  eventstreams:
+    namespace: eventstreams
+    repo: local-charts
+    path: icp4icontent/IBM-Event-Streams-for-IBM-Cloud-Pak-for-Integration-1.4.0.tgz
+  apic:
+    namespace: apic
+    repo: local-charts
+    path: icp4icontent/IBM-API-Connect-Enterprise-for-IBM-Cloud-Pak-for-Integration-1.0.4.tgz
+  aspera:
+    namespace: aspera
+    repo: local-charts
+    path: icp4icontent/IBM-Aspera-High-Speed-Transfer-Server-for-IBM-Cloud-Pak-for-Integration-1.2.4.tgz
+  datapower:
+    namespace: datapower
+    repo: local-charts
+    path: icp4icontent/IBM-DataPower-Virtual-Edition-for-IBM-Cloud-Pak-for-Integration-1.0.5.tgz
+  assetrepo:
+    namespace: integration
+    repo: local-charts
+    path: icp4icontent/IBM-Cloud-Pak-for-Integration-Asset-Repository-3.0.0.tgz
+  tracing:
+    namespace: tracing
+    repo: local-charts
+    path: icp4icontent/IBM-Cloud-Pak-for-Integration-Operations-Dashboard-1.0.1.tgz

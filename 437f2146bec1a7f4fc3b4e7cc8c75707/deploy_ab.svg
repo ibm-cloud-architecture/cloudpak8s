@@ -1,0 +1,236 @@
+<svg height="333" viewBox="0 0 952 333" xmlns="http://www.w3.org/2000/svg" width="952" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style type="text/css"><![CDATA[
+.st2 {fill:#303030;font-family:Arial;font-size:7.5pt;font-weight:bold}
+.st1 {fill:#303030;font-family:Arial;font-size:7.5pt}
+]]></style>
+    <defs>
+        <linearGradient x2="0%" id="lg1" y2="100%" x1="0%" y1="0%">
+            <stop offset="0" stop-color="#fbfbfb"/>
+            <stop offset="1" stop-color="#efefef"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-129,-41.5)">
+        <g transform="translate(369,64)" id="shape1">
+            <path d="M2,2L550,2L550,139L2,139L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L548,0L548,137L0,137L0,0z" stroke="#357d91" fill="#d7d7d7"/>
+        </g>
+        <g transform="translate(208.5,133)" id="shape2">
+            <path d="M2,2L106,2L106,172L2,172L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L104,0L104,170L0,170L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="37" y="64">Router</tspan>
+                <tspan x="20" y="88">Load Balancer</tspan>
+                <tspan x="19" y="112">Reverse Proxy</tspan>
+            </text>
+        </g>
+        <g transform="translate(378,76)" id="shape3">
+            <path d="M2,2L78,2L78,115L2,115L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,113L0,113L0,0z" stroke="#6d6d6d" fill="#ebebeb"/>
+            <text class="st1">
+                <tspan x="21" y="59.5">Service</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,76)" id="shape4">
+            <path d="M2,2L116,2L116,29L2,29L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,27L0,27L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st2">
+                <tspan x="11" y="16.5">User Interface A Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(642,104.5)" id="shape5">
+            <path d="M2,2L116,2L116,58L2,58L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,56L0,56L0,0z" stroke="#6d6d6d" fill="#ebebeb"/>
+            <text class="st1">
+                <tspan x="23" y="25">Business Logic</tspan>
+                <tspan x="48" y="37">Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(793,133)" id="shape6">
+            <path d="M2,2L116,2L116,58L2,58L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,56L0,56L0,0z" stroke="#6d6d6d" fill="#ebebeb"/>
+            <text class="st1">
+                <tspan x="25" y="31">Database Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,89.5)" id="shape7">
+            <path d="M0,0L-21,0L-21,14.5L-32.6,14.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-37,14.5L-31.8,17.5C-32.3,16.6,-32.6,15.6,-32.6,14.5C-32.6,13.4,-32.3,12.4,-31.8,11.5L-37,14.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(605,89.5)" id="shape8">
+            <path d="M6,0L94,0L94,9" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M97,9L94,15L91,9L97,9" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(756,132.5)" id="shape9">
+            <path d="M6,0L21,0L21,-31.5L94,-31.5L94,-5.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M97,-5.5L94,.5L91,-5.5L97,-5.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(132,193)">
+            <path d="M2,2L40,2L40,52L2,52L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path transform="translate(0,19.33)" id="shape10" d="M8.8,0L29.1,0C34,0,38,3.6,38,8.1L38,22.6C38,27,34,30.7,29.1,30.7L8.8,30.7C3.9,30.7,0,27,0,22.6L0,8.1C0,3.6,3.9,0,8.8,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <path transform="translate(7.33,-0.03)" id="shape11" d="M-0,11.4C-0,5.1,5.2,0,11.6,0C18.1,0,23.3,5.1,23.3,11.4C23.3,17.6,18.1,22.7,11.6,22.7C5.2,22.7,-0,17.6,-0,11.4z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="6" y="65">Users</tspan>
+            </text>
+        </g>
+        <g transform="translate(369,42.5)" id="shape12">
+            <text class="st1">
+                <tspan x="4" y="17.5">A</tspan>
+            </text>
+        </g>
+        <g transform="translate(170,218)" id="shape13">
+            <path d="M6,0L32.5,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M32.5,-3L38.5,0L32.5,3L32.5,-3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(491,119)" id="shape14">
+            <path d="M2,2L116,2L116,29L2,29L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,27L0,27L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st2">
+                <tspan x="11" y="16.5">User Interface A Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,162)" id="shape15">
+            <path d="M2,2L116,2L116,29L2,29L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,27L0,27L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st2">
+                <tspan x="11" y="16.5">User Interface A Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,132.5)" id="shape16">
+            <path d="M0,0L-21,0L-32.6,.4" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-37,.5L-31.7,3.3C-32.3,2.5,-32.6,1.5,-32.6,.4C-32.6,-0.7,-32.4,-1.8,-31.9,-2.7L-37,.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(491,175.5)" id="shape17">
+            <path d="M0,0L-21,0L-21,-16.5L-32.6,-16.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-37,-16.5L-31.8,-13.5C-32.3,-14.4,-32.6,-15.4,-32.6,-16.5C-32.6,-17.6,-32.3,-18.6,-31.8,-19.5L-37,-16.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(605,132.5)" id="shape18">
+            <path d="M6,0L31,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M31,-3L37,0L31,3L31,-3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(699,160.5)" id="shape19">
+            <path d="M0,6L0,15L-88,15" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-3,6L0,0L3,6L-3,6" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M-88,18L-94,15L-88,12L-88,18" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(369,233.5)" id="shape20">
+            <path d="M2,2L550,2L550,139L2,139L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L548,0L548,137L0,137L0,0z" stroke="#357d91" fill="#d7d7d7"/>
+        </g>
+        <g transform="translate(378,245.5)" id="shape21">
+            <path d="M2,2L78,2L78,115L2,115L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,113L0,113L0,0z" stroke="#6d6d6d" fill="#ebebeb"/>
+            <text class="st1">
+                <tspan x="21" y="59.5">Service</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,245.5)" id="shape22">
+            <path d="M2,2L116,2L116,29L2,29L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,27L0,27L0,0z" stroke="#6d6d6d" fill="#fdefe9"/>
+            <text class="st2">
+                <tspan x="11" y="16.5">User Interface B Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(642,274)" id="shape23">
+            <path d="M2,2L116,2L116,58L2,58L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,56L0,56L0,0z" stroke="#6d6d6d" fill="#ebebeb"/>
+            <text class="st1">
+                <tspan x="23" y="25">Business Logic</tspan>
+                <tspan x="48" y="37">Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(793,302.5)" id="shape24">
+            <path d="M2,2L116,2L116,58L2,58L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,56L0,56L0,0z" stroke="#6d6d6d" fill="#ebebeb"/>
+            <text class="st1">
+                <tspan x="25" y="31">Database Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,259)" id="shape25">
+            <path d="M0,0L-21,0L-21,14.5L-32.6,14.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-37,14.5L-31.8,17.5C-32.3,16.6,-32.6,15.6,-32.6,14.5C-32.6,13.4,-32.3,12.4,-31.8,11.5L-37,14.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(605,259)" id="shape26">
+            <path d="M6,0L94,0L94,9" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M97,9L94,15L91,9L97,9" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(756,302)" id="shape27">
+            <path d="M6,0L21,0L21,-31.5L94,-31.5L94,-5.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M97,-5.5L94,.5L91,-5.5L97,-5.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(491,288.5)" id="shape28">
+            <path d="M2,2L116,2L116,29L2,29L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,27L0,27L0,0z" stroke="#6d6d6d" fill="#fdefe9"/>
+            <text class="st2">
+                <tspan x="11" y="16.5">User Interface B Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,331.5)" id="shape29">
+            <path d="M2,2L116,2L116,29L2,29L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L114,0L114,27L0,27L0,0z" stroke="#6d6d6d" fill="#fdefe9"/>
+            <text class="st2">
+                <tspan x="11" y="16.5">User Interface B Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(491,302)" id="shape30">
+            <path d="M0,0L-21,0L-32.6,.4" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-37,.5L-31.7,3.3C-32.3,2.5,-32.6,1.5,-32.6,.4C-32.6,-0.7,-32.4,-1.8,-31.9,-2.7L-37,.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(491,345)" id="shape31">
+            <path d="M0,0L-21,0L-21,-16.5L-32.6,-16.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-37,-16.5L-31.8,-13.5C-32.3,-14.4,-32.6,-15.4,-32.6,-16.5C-32.6,-17.6,-32.3,-18.6,-31.8,-19.5L-37,-16.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(605,302)" id="shape32">
+            <path d="M6,0L31,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M31,-3L37,0L31,3L31,-3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(699,330)" id="shape33">
+            <path d="M0,6L0,15L-88,15" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M-3,6L0,0L3,6L-3,6" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M-88,18L-94,15L-88,12L-88,18" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(369,213)" id="shape34">
+            <text class="st1">
+                <tspan x="4" y="18">B</tspan>
+            </text>
+        </g>
+        <g transform="translate(312.5,218)" id="shape35">
+            <path stroke-width="4" d="M12,0L24.5,0L24.5,84.5L44.5,84.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M12,6L0,0L12,-6L12,6" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M44.5,78.5L56.5,84.5L44.5,90.5L44.5,78.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(917,136)" id="shape36">
+            <path d="M6,0L103,0L103,19" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M106,19L103,25L100,19L106,19" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(963.5,161)" id="shape37">
+            <path d="M2,58.5C2,27.3,27.3,2,58.5,2C89.7,2,115,27.3,115,58.5C115,89.7,89.7,115,58.5,115C27.3,115,2,89.7,2,58.5z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,56.5C0,25.3,25.3,0,56.5,0C87.7,0,113,25.3,113,56.5C113,87.7,87.7,113,56.5,113C25.3,113,0,87.7,0,56.5z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="33" y="53.5">Monitoring</tspan>
+                <tspan x="48" y="65.5">Pod</tspan>
+            </text>
+        </g>
+        <g transform="translate(917,302.5)" id="shape38">
+            <path d="M6,0L103,0L103,-22.5" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M6,3L0,0L6,-3L6,3" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M100,-22.5L103,-28.5L106,-22.5L100,-22.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(312.5,218)" id="shape39">
+            <path stroke-width="4" d="M12,0L24.5,0L24.5,-85L44.5,-85" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M12,6L0,0L12,-6L12,6" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+            <path stroke-width="1" d="M44.5,-91L56.5,-85L44.5,-79L44.5,-91" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(312.5,218)" id="shape40">
+            <path d="M0,0L619,0L646.6,-0.4" stroke="#6d6d6d" stroke-dasharray="11,5" fill="none"/>
+            <path stroke-width="1" d="M651,-0.5L645.8,-3.4C646.3,-2.5,646.6,-1.5,646.6,-0.4C646.6,.7,646.3,1.7,645.9,2.6L651,-0.5" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+cssProductionSetting:
+  license: accept
+
+service:
+  name: csssvc
+  externalSSLPort: 8199
+
+dataVolume:
+  existingPVCforCSSCfgstore: "css-cfgstore-pvc"
+  existingPVCforCSSLogstore: "css-logstore-pvc"
+  existingPVCforCSSTmpstore: "css-tempstore-pvc"
+  existingPVCforIndex: "css-indexstore-pvc"
+  existingPVCforCSSCustomstore: "cs-customstore-pvc"
+
+image:
+  repository: docker-registry.default.svc:5000/ecmproject/css
+  pullPolicy: IfNotPresent
+
+imagePullSecrets:
+  name: "admin.registrykey"

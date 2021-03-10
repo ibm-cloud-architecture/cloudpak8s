@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: playback-server-admin-secret
+type: Opaque
+stringData:
+  ADMIN_USER: "ceadmin"
+  AE_DATABASE_PWD: "Passw0rd"
+  AE_DATABASE_USER: "db2inst1"
+  OPENID_CLIENT_ID: "OPENID_PLAYBACK_CLIENT_ID"
+  OPENID_CLIENT_SECRET: "Passw0rd"
+  SESSION_SECRET: " bigblue123playbacksolutionserver"
+  SESSION_COOKIE_NAME: "nsessionid"
+  REDIS_PASSWORD: "Passw0rd"
+

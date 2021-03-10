@@ -1,0 +1,78 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: ibm-odm-prod
+    release: odm-prod-release
+  name: odm-prod-release-odm-decisioncenter
+  namespace: odmproject
+spec:
+  port:
+    targetPort: decisioncenter-https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: odm-prod-release-odm-decisioncenter
+  wildcardPolicy: None
+
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: ibm-odm-prod
+    release: odm-prod-release
+  name: odm-prod-release-odm-decisionserverconsole
+  namespace: odmproject
+spec:
+  port:
+    targetPort: decisionserverconsole-https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: odm-prod-release-odm-decisionserverconsole
+  wildcardPolicy: None
+
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: ibm-odm-prod
+    release: odm-prod-release
+  name: odm-prod-release-odm-decisionrunner
+  namespace: odmproject
+spec:
+  port:
+    targetPort: decisionrunner-https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: odm-prod-release-odm-decisionrunner
+  wildcardPolicy: None
+
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: ibm-odm-prod
+    release: odm-prod-release
+  name: odm-prod-release-odm-decisionserverruntime
+  namespace: odmproject
+spec:
+  port:
+    targetPort: decisionserverruntime-https
+  tls:
+    termination: passthrough
+  to:
+    kind: Service
+    name: odm-prod-release-odm-decisionserverruntime
+  wildcardPolicy: None
+

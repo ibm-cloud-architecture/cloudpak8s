@@ -1,0 +1,252 @@
+<svg height="188" viewBox="0 0 866 188" xmlns="http://www.w3.org/2000/svg" width="866" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style type="text/css"><![CDATA[
+.st1 {fill:#303030;font-family:Arial;font-size:7.5pt}
+.st2 {font-size:9.75pt;font-weight:bold}
+]]></style>
+    <defs>
+        <linearGradient x2="0%" id="lg1" y2="100%" x1="0%" y1="0%">
+            <stop offset="0" stop-color="#fbfbfb"/>
+            <stop offset="1" stop-color="#efefef"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-39,-37)">
+        <g transform="translate(60,179)" id="shape1">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(60,141)" id="shape2">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(60,103)" id="shape3">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(155.5,160)" id="shape4">
+            <path d="M2,2L77,2L77,40L2,40L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L75,0L75,38L0,38L0,0z" stroke="#6d6d6d" fill="#f4e9e9"/>
+            <text class="st1">
+                <tspan x="12" y="16">Pre Hook is </tspan>
+                <tspan x="17" y="28">executed</tspan>
+            </text>
+        </g>
+        <g transform="translate(249,179)" id="shape5">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(249,141)" id="shape6">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(249,103)" id="shape7">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(249,65)" id="shape8">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(343,179)" id="shape9">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(343,141)" id="shape10">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(343,103)" id="shape11">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(438,179)" id="shape12">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(438,141)" id="shape13">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(438,65)" id="shape14">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(438,103)" id="shape15">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(532,179)" id="shape16">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(532,103)" id="shape17">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(532,141)" id="shape18">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(627,179)" id="shape19">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="url(#lg1)"/>
+            <text class="st1">
+                <tspan x="12" y="12.5">Old Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(627,65)" id="shape20">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(627,103)" id="shape21">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(627,141)" id="shape22">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(816,160)" id="shape23">
+            <path d="M2,2L78,2L78,40L2,40L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,38L0,38L0,0z" stroke="#6d6d6d" fill="#f4e9e9"/>
+            <text class="st1">
+                <tspan x="10" y="16">Post Hook is </tspan>
+                <tspan x="18" y="28">executed</tspan>
+            </text>
+        </g>
+        <g transform="translate(721,103)" id="shape24">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(721,141)" id="shape25">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(721,179)" id="shape26">
+            <path d="M2,2L78,2L78,21L2,21L2,2z" fill-opacity="0.08" fill="#000000"/>
+            <path d="M0,0L76,0L76,19L0,19L0,0z" stroke="#6d6d6d" fill="#ffff00"/>
+            <text class="st1">
+                <tspan x="10" y="12.5">New Version</tspan>
+            </text>
+        </g>
+        <g transform="translate(45.5,38)" id="shape27">
+            <text class="st1">
+                <tspan class="st2" x="4" y="15">Rolling Deployment Strategy</tspan>
+            </text>
+        </g>
+        <g transform="translate(45.26,217)" id="shape28">
+            <path d="M0,0L841.5,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M846.7,0L836.3,-3L841.5,0L836.3,3L846.7,0" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="matrix(0,-1,1,0,45.3,217)" id="shape29">
+            <path d="M0,0L165.6,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M170,0L164.8,-3C165.3,-2.1,165.6,-1.1,165.6,0C165.6,1.1,165.3,2.1,164.8,3L170,0" stroke="#6d6d6d" stroke-linecap="round" fill="#6d6d6d"/>
+        </g>
+        <g transform="translate(830.5,201)" id="shape30">
+            <text class="st1">
+                <tspan x="12" y="12.5">TIME</tspan>
+            </text>
+        </g>
+        <g transform="translate(45.5,78.5)" id="shape31">
+            <text class="st1">
+                <tspan x="4" y="2">REPLICA </tspan>
+                <tspan x="4" y="14">COUNT</tspan>
+            </text>
+        </g>
+        <path transform="translate(227,90)" id="shape32" d="M0,0L671,0" stroke="#6d6d6d" stroke-dasharray="11,5" fill="none"/>
+        <path transform="translate(227,61)" id="shape33" d="M0,0L671,0" stroke="#6d6d6d" stroke-dasharray="11,5" fill="none"/>
+        <path transform="translate(227,97)" id="shape34" d="M0,0L671,0" stroke="#6d6d6d" stroke-dasharray="11,5" fill="none"/>
+        <g transform="translate(117.5,78.5)" id="shape35">
+            <text class="st1">
+                <tspan x="4.3" y="13">Replica Count = 3</tspan>
+            </text>
+        </g>
+        <g transform="translate(737,65)" id="shape36">
+            <text class="st1">
+                <tspan x="4" y="13">maxSurge = 1</tspan>
+            </text>
+        </g>
+        <g transform="translate(804.5,84.25)" id="shape37">
+            <text class="st1">
+                <tspan x="4" y="13">maxUnavailable = 0</tspan>
+            </text>
+        </g>
+        <g transform="translate(203,90)" id="shape38">
+            <path d="M0,0L19,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M13,-3L19,0L13,3" stroke="#6d6d6d" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+        </g>
+        <g transform="matrix(0,-1,1,0,737,90)" id="shape39">
+            <path d="M0,0L29,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M23,-3L29,0L23,3" stroke="#6d6d6d" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+        </g>
+        <g transform="matrix(0,1,-1,0,794,89)" id="shape40">
+            <path d="M0,0L8,0" stroke="#6d6d6d" fill="none"/>
+            <path stroke-width="1" d="M2,-3L8,0L2,3" stroke="#6d6d6d" stroke-linecap="round" fill="none" stroke-linejoin="round"/>
+        </g>
+    </g>
+</svg>

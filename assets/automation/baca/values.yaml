@@ -1,0 +1,328 @@
+# Default values for smartpages.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+## Images
+callerapi:
+    name: callerapi
+    repository: docker-registry.default.svc:5000/baca/callerapi
+    tag: 19.0.1
+    pullPolicy: Always
+    replicaCount: 3
+    maxUnavailableCount: 1
+    resources:
+      # requests:
+      #   memory: 256Mi
+      #   cpu: "0.2"
+      limits:
+        memory: 491.52Mi
+       #  memory: 480Mi
+
+
+
+spbackend:
+    name: spbackend
+    repository: docker-registry.default.svc:5000/baca/backend
+    tag: 19.0.1
+    pullPolicy: Always
+    replicaCount: 3
+    maxUnavailableCount: 1
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    baseDB: CABASEDB
+    baseDBServer: 169.62.194.212
+    baseDBPort: 50000
+    baseDBUser: bacaadmin
+    resources:
+      limits:
+        memory: 655.36Mi
+        # memory: 640Mi
+    backendPath:
+    backendPort: 8080
+#    SOCKET_SECURE: false
+#    SOCKET_PORT: 8080
+    callerAPIProtocol: https
+    fullCallerAPIPath: /api/v1/actions
+    nodeTLSRejectUnauthorized: 0
+    ldap: true
+    ldapFilter: (&(cn={{username}})(objectClass=person))
+    ldapDN: cn=root
+    ldapURL: ldap://169.62.194.212
+    ldapPort: 389
+    ldapBase: o=ibm,c=us
+    userName: bacauser
+    ldapCrtName:
+    ldapSelfSignedCrt: N
+
+spfrontend:
+    name: spfrontend
+    repository: docker-registry.default.svc:5000/baca/spfrontend
+    tag: 19.0.1
+    pullPolicy: Always
+    replicaCount: 3
+    maxUnavailableCount: 1
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    backendHost: 52.116.163.90
+    backendPort:
+    backendPath: backendbaca
+    frontendHost: 52.116.163.90
+    frontendPath: frontendbaca
+#    SOCKET_HOST:
+#    SOCKET_PATH:
+#    SOCKET_PORT: $SOCKET_PORT
+    # limitsCPU: "0.4"
+    resources:
+      limits:
+        memory: 491.52Mi
+        # memory: 480Mi
+    # requestsCPU: "0.2"
+    # requestsMemory: "500Mi"
+    nodeTLSRejectUnauthorized: 0
+    sso:
+    bxDomainName: 52.116.163.90
+    ldap: true
+
+consumers:
+  - name: postprocessing
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/postprocessing
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 491.52Mi
+        # memory: 480Mi
+  - name: pdfprocess
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/pdfprocess
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 983.04Mi
+        # memory: 960Mi
+  - name: utf8process
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/utf8process
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 983.04Mi
+  - name: setup
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/setup
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 491.52Mi
+  - name: ocr-extraction
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/ocrextraction
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 1474.56Mi
+  - name: classifyprocess-classify
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/classify
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 983.04Mi
+  - name: processing-extraction
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/processingextraction
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 1474.56Mi
+  - name: interprocessing
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/interprocessing
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 491.52Mi
+  - name: reanalyze
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/reanalyze
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 737.28Mi
+  - name: updatefiledetail
+    arch: amd64
+    repository: docker-registry.default.svc:5000/baca/updatefiledetail
+    tag: 19.0.1
+    pullPolicy: Always
+    # pullSecrets:
+    #   - myRegistrKeySecretName
+    replicaCount: 3
+    maxUnavailableCount: 1
+    numWorkers: 2
+    resources:
+      limits:
+        memory: 491.52Mi
+
+## Dependencies
+
+rabbitmq:
+  image:
+    repository: docker-registry.default.svc:5000/baca/rabbitmq
+    tag: 19.0.1
+    pullPolicy: Always
+  resources:
+    limits:
+      memory: 983.04Mi
+  rabbitmq:
+    username: PoC
+    ## If unset a random password will be generated
+    # password: mypassword
+  nodeSelector:
+    celerybaca: baca
+
+
+## Services
+
+callerapisvc:
+  name: callerapi
+  type: NodePort
+#  externalPort:
+  internalPort: 8080
+spbackendsvc:
+  name: spbackend
+  type: NodePort
+  internalPort: 8080
+#  externalPort: 30102
+
+spfrontendsvc:
+  name: spfrontend
+  type: NodePort
+  internalPort: 8080
+  #externalPort: 30102
+
+
+######################
+ingress:
+  enabled: false
+  # Used to create an Ingress record.
+  tls:
+    hosts:
+    - <hostname>
+
+nodeSelector:
+  celerybaca: baca ## the nodeselector name should meet the name of create node lables
+
+
+global:
+  image:
+    pullSecrets: false
+  arch: amd64
+#  pullSecrets:
+#    - myRegistrKeySecretName
+  redis:
+    image:
+      repository: docker-registry.default.svc:5000/baca/redis
+      tag: 19.0.1
+      pullPolicy: Always
+  minio:
+    image:
+      repository: docker-registry.default.svc:5000/baca/minio
+      tag: 19.0.1
+      pullPolicy: Always
+    bucketName: mybucket
+  redisresources:
+      limits:
+        memory: 655.36Mi
+  minioresources:
+      limits:
+        memory: 655.36Mi
+  sslValidate: false
+  namespace:
+    name: baca
+  mongo:
+    image:
+      repository: docker-registry.default.svc:5000/baca/mongo
+      tag: 19.0.1
+      pullPolicy: Always
+      replicaCount: 1
+    type: LoadBalancer
+    mongoPort: 27017
+    nodeSelector:
+      mongobaca: baca
+    mongoLimitedMemory: 1638.4Mi
+    wiredTigerCache: ".3"
+  mongoadmin:
+    image:
+      repository: docker-registry.default.svc:5000/baca/mongo
+      tag: 19.0.1
+      pullPolicy: Always
+      replicaCount: 1
+    type: LoadBalancer
+    mongoAdminPort: 27017
+    nodeSelector:
+      mongo-adminbaca: baca
+    mongoAdminLimitedMemory: 1638.4Mi
+    wiredTigerCache: ".3"
+  celery:
+    processTimeout: 300
+  configs:
+    claimname: sp-config-pvc
+  logs:
+    claimname: sp-log-pvc
+    logLevel: debug
+  data:
+    claimname: sp-data-pvc

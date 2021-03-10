@@ -1,0 +1,137 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-bai-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 20Gi
+  nfs:
+    path: /storage/persistentvolumes/bai/ibm-bai-pv
+    server: <nfs-server-ip>
+  persistentVolumeReclaimPolicy: Retain
+  claimRef:
+    namespace: cp4a
+    name: cp4a-prod-bai-pvc
+
+---
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: cp4a-prod-bai-pvc
+  namespace: cp4a
+spec:
+  storageClassName: ""
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 20Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-bai-ek-pv-0
+  namespace: cp4a
+spec:
+  storageClassName: "bai-ek-data"
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  nfs:
+    path: /storage/persistentvolumes/bai/ibm-bai-ek-pv-0
+    server: <nfs-server-ip>
+  persistentVolumeReclaimPolicy: Recycle
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-bai-ek-pv-1
+  namespace: cp4a
+spec:
+  storageClassName: "bai-ek-data"
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  nfs:
+    path: /storage/persistentvolumes/bai/ibm-bai-ek-pv-1
+    server: <nfs-server-ip>
+  persistentVolumeReclaimPolicy: Recycle
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-bai-ek-pv-2
+  namespace: cp4a
+spec:
+  storageClassName: "bai-ek-data"
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  nfs:
+    path: /storage/persistentvolumes/bai/ibm-bai-ek-pv-2
+    server: <nfs-server-ip>
+  persistentVolumeReclaimPolicy: Recycle
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-bai-ek-pv-3
+  namespace: cp4a
+spec:
+  storageClassName: "bai-ek-data"
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 10Gi
+  nfs:
+    path: /storage/persistentvolumes/bai/ibm-bai-ek-pv-3
+    server: <nfs-server-ip>
+  persistentVolumeReclaimPolicy: Recycle
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-bai-ek-snapshots-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 30Gi
+  nfs:
+    path: /storage/persistentvolumes/bai/es-snapshots-pv
+    server: <nfs-server-ip>
+  persistentVolumeReclaimPolicy: Retain
+  claimRef:
+    namespace: cp4a
+    name: ibm-bai-ek-snapshots-pvc
+
+---
+
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: ibm-bai-ek-snapshots-pvc
+  namespace: cp4a
+spec:
+  storageClassName: ""
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 30Gi

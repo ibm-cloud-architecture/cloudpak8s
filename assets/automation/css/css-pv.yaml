@@ -1,0 +1,188 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: css-cfgstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/css/CSS_Server/data
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: css-cfgstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: css-cfgstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: css-cfgstore-pv
+  volumeName: css-cfgstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: css-tempstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/css/CSS_Server/temp
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: css-tempstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: css-tempstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: css-tempstore-pv
+  volumeName: css-tempstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: css-logstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/css/CSS_Server/log
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: css-logstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: css-logstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: css-logstore-pv
+  volumeName: css-logstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: css-indexstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/css/indexareas
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: css-indexstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: css-indexstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: css-indexstore-pv
+  volumeName: css-indexstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+
+---
+
+
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: css-customstore-pv
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi
+  nfs:
+    path: /data/persistentvolumes/css/CSS_Server/config
+    server: <ip-address>
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: css-customstore-pv
+
+---
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: cs-customstore-pvc
+  namespace: ecmproject
+spec:
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: css-customstore-pv
+  volumeName: css-customstore-pv
+status:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 1Gi

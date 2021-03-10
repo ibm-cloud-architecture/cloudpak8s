@@ -1,0 +1,92 @@
+persistence:
+  useDynamicProvisioning: false
+
+imagePullPolicy: IfNotPresent
+
+kafka:
+  bootstrapServers: "my-kafka-headless.kafka.svc.cluster.local:9092"
+  securityProtocol: "PLAINTEXT"
+
+elasticsearch:
+  install: true
+
+settings:
+  egress: true
+  ingressTopic: "bai-prod-release-ingress"
+  egressTopic: "bai-prod-release-egress"
+  serviceTopic: "bai-prod-release-service"
+
+setup:
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-setup"
+
+admin:
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-admin"
+
+flinkPv:
+  capacity: "20Gi"
+  storageClassName: ""
+  existingClaimName: "ibm-bai-pvc"
+
+flink:
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-flink"
+  zookeeper:
+    image:
+      repository: "docker-registry.default.svc:5000/baiproject/bai-flink-zookeeper"
+
+ingestion:
+  install: false
+
+bpmn:
+  install: true
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-bpmn"
+
+bawadv:
+  install: true
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-bawadv"
+
+icm:
+  install: true
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-icm"
+
+odm:
+  install: true
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-odm"
+
+content:
+  install: true
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-content"
+
+initImage:
+  image:
+    repository: "docker-registry.default.svc:5000/baiproject/bai-init"
+
+ibm-dba-ek:
+  elasticsearch:
+    image:
+      repository: "docker-registry.default.svc:5000/baiproject/bai-elasticsearch"
+    init:
+      image:
+        repository: "docker-registry.default.svc:5000/baiproject/bai-init"
+    data:
+      storage:
+        persistent: true
+        useDynamicProvisioning: false
+        size: 10Gi
+        storageClass: "bai-ek-data"
+      snapshotStorage:
+        enabled: true
+        useDynamicProvisioning: false
+        size: 30Gi
+        storageClassName: ""
+        existingClaimName: "ibm-bai-ek-snapshots-pvc"
+  kibana:
+    image:
+      repository: "docker-registry.default.svc:5000/baiproject/bai-kibana"

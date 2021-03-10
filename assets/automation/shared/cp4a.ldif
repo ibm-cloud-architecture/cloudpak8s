@@ -1,0 +1,76 @@
+version: 1
+
+dn: O=IBM,C=US
+objectclass: organization
+objectclass: top
+o: IBM
+description: This entry created automatically corresponding to a configured 
+ directory suffix
+
+dn: ou=Groups,o=ibm,c=us
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=dbagroup,ou=Groups,o=ibm,c=us
+objectClass: top
+objectClass: groupOfNames
+cn: dbagroup
+member: uid=bacaadmin,ou=Users,o=IBM,c=US
+
+dn: ou=Users,o=ibm,c=us
+objectClass: top
+objectClass: organizationalUnit
+ou: Users
+
+dn: uid=bacaadmin,ou=Users,o=ibm,c=us
+objectClass: top
+objectClass: person
+objectClass: ePerson
+cn: bacaadmin
+sn: bacaadmin
+uid: bacaadmin
+userPassword:: e1NIQX1XRng0VUJaTVJEYkRpeUI4ME5NMU9EcWYyV2M9
+
+dn: uid=bacauser,ou=Users,o=ibm,c=us
+objectClass: top
+objectClass: person
+objectClass: ePerson
+cn: bacauser
+sn: bacauser
+uid: Copy of bacaadmin
+uid: bacauser
+userPassword:: YmFjYXVzZXI=
+
+dn: uid=ceadmin,ou=Users,o=ibm,c=us
+objectclass: person
+objectclass: ePerson
+objectclass: top
+cn: ceadmin
+sn: ceadmin
+uid: ceadmin
+userpassword:: e1NIQTI1Nn1xempxMnV0MFpabnl3ZTZRK0NaL01mUm5OSFJpZGtvazF4ckJoR
+ DduZitNPQ==
+
+dn: uid=P8Tester,ou=Users,o=ibm,c=us
+objectclass: person
+objectclass: ePerson
+objectclass: top
+cn: P8Tester
+sn: P8Tester
+uid: P8Tester
+userpassword:: UGFzc3cwcmQ=
+
+dn: cn=P8Admins,ou=Groups,o=ibm,c=us
+objectclass: top
+objectclass: groupOfNames
+cn: P8Admins
+member: uid=ceadmin,ou=Users,o=ibm,c=us
+
+dn: cn=P8Users,ou=Groups,o=ibm,c=us
+objectClass: top
+objectClass: groupOfNames
+cn: P8Users
+member: uid=P8Tester,ou=Users,o=ibm,c=us
+member: uid=ceadmin,ou=Users,o=ibm,c=us
+

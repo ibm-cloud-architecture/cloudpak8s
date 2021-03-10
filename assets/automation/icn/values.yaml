@@ -1,0 +1,27 @@
+icnProductionSetting:
+  icnJNDIDSName: ECMClientDS
+  icnSChema: ICNSCHEMA
+  icnTableSpace: ICNTS
+  icnAdmin: ceadmin
+  license: accept
+
+dataVolume:
+## Specify the name of the Existing Claim to be used by your application
+## empty string means don't use an existClaim
+## Existing Persistence parameters for ICN
+  existingPVCforICNCfgstore: "icn-cfgstore-pvc"
+  existingPVCforICNLogstore: "icn-logstore-pvc"
+  existingPVCforICNPluginstore: "icn-pluginstore-pvc"
+  existingPVCforICNVWCachestore: "icn-vw-cachestore-pvc"
+  existingPVCforICNVWLogstore: "icn-vw-logstore-pvc"
+  existingPVCforICNAsperastore: "icn-asperastore-pvc"
+
+autoscaling:
+  enabled: false
+
+imagePullSecrets:
+  name: "admin.registrykey"
+
+image:
+  repository: docker-registry.default.svc:5000/fncnproject/navigator
+  pullPolicy: IfNotPresent
